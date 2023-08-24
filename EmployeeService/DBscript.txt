@@ -1,0 +1,7 @@
+﻿CREATE TABLE Employee (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    ManagerId INT,
+    Enable BIT,
+    FOREIGN KEY (ManagerId) REFERENCES Employee(Id)
+);
